@@ -1,7 +1,5 @@
 var send = document.querySelector(".send");
 
-
-
 // Sign up process
 document.getElementById("signupForm").addEventListener("submit", signup);
 

@@ -1,5 +1,15 @@
+html {
+    height: 100%;
+    overflow-y: visible;
+}
+
 #navbar {
     transition: 0.4s;
+}
+
+.divall {
+    overflow-x: hidden;
+    height: 100%;
 }
 
 .header-carousel-item {
