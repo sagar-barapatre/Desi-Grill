@@ -1,16 +1,34 @@
+@media (min-width: 768px) {
+    .text-md-dark {
+        color: #333;
+    }
+}
+
+/* @media (max-width: 767px) {
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+} */
+
 html {
     height: 100%;
-    overflow-y: visible;
-}
-
-#navbar {
-    transition: 0.4s;
-}
-
-.divall {
     overflow-x: hidden;
-    height: 100%;
 }
+
+body {
+    position: relative;
+}
+
+/* Below code is for hiding scrollbar */
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+/* ----------- */
 
 .header-carousel-item {
     height: 550px;
@@ -19,12 +37,6 @@ html {
 .bg-cover {
     background-size: cover;
     background-position: center;
-}
-
-@media (min-width: 768px) {
-    .text-md-dark {
-        color: #333;
-    }
 }
 
 .navbar-toggler:focus,
@@ -133,7 +145,7 @@ html {
 .floating-scrollspy .nav-link.active i,
 .floating-scrollspy .nav-link:hover i {
     opacity: 1.8;
-    transition: 1s;
+    transition: 0.4s;
 }
 
 .invalid-feedback {
@@ -144,13 +156,9 @@ html {
     color: rgb(39, 174, 86);
 }
 
-
-/* @media (max-width: 767px) {
-    .navbar-toggler {
-        border: none;
-        outline: none;
-    }
-} */
+#navbar {
+    transition: 0.4s;
+}
 
 #signModal {
     overflow: auto !important;

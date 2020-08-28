@@ -22,9 +22,7 @@
 
 </head>
 
-<body>
-
-
+<body data-spy="scroll">
 
     <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-dark " style="background:rgb(25, 25, 25);z-index:99; font-size:20px;">
         <div class="container d-flex">
@@ -58,9 +56,10 @@
     </nav>
 
     <!-- Scrollspy -->
-    <div class="divall" data-spy="scroll" data-target="#navspy-example2" style="height: 100%">
-        <div class="floating-scrollspy">
-            <ul class="nav" id="navspy-example2">
+    <div data-target="#navspy-example2">
+        <div>
+            <ul class="nav floating-scrollspy" id="navspy-example2">
+
                 <li class="nav-item">
                     <a class="nav-link" href="#carouselExampleIndicators"> <span>#section</span> <i></i> </a>
                 </li>
